@@ -11,10 +11,8 @@ var promoRouter = require("./routes/promoRouter");
 var leaderRouter = require("./routes/leaderRouter");
 
 const mongoose = require("mongoose");
-const Dishes = require("./models/dishes");
-const { json } = require("express");
-
-const url = "mongodb://localhost:27017/conFusion";
+const dbConfigs = require("./dbconfig");
+const url = `mongodb+srv://${dbConfigs.dbuser}:${dbConfigs.dbpass}@cluster0.v4iwv.mongodb.net/confusion?retryWrites=true&w=majority`;
 const connect = mongoose.connect(
     url,
     {
