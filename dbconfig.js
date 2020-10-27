@@ -1,2 +1,6 @@
-export const dbuser = "guru";
-export const dbpass = "5UnYfyVWWVL4VqWM";
+const dbConfig = {
+    "dbuser" : "guru",
+    "dbpass" : "5UnYfyVWWVL4VqWM"
+}
+
+module.exports = dbConfig;
