@@ -11,6 +11,7 @@ var promoRouter = require("./routes/promoRouter");
 var leaderRouter = require("./routes/leaderRouter");
 
 const mongoose = require("mongoose");
+const cors = require("cors");
 const dbConfig = require("./dbconfig");
 const url = `mongodb+srv://${dbConfig.dbuser}:${dbConfig.dbpass}@cluster0.v4iwv.mongodb.net/confusion?retryWrites=true&w=majority`;
 const connect = mongoose.connect(
@@ -33,6 +34,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 
 app.use(logger("dev"));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
