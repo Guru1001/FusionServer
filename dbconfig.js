@@ -1,6 +1,6 @@
 const dbConfig = {
-    "dbuser" : "NOT_CORRECT_USERNAME",
-    "dbpass" : "NOT_CORRECT_PASSWORD"
+    "dbuser" : "fusion-admin",
+    "dbpass" : "jedUqyftfSqiCkSn"
 }
 
 module.exports = dbConfig;
