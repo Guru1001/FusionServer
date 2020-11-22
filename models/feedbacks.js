@@ -22,6 +22,10 @@ const feedbackSchema = new Schema({
         type: String,
         required: true,
     },
+    agree:{
+        type: Boolean,
+        required: true,
+    },
     contacttype:{
         type: String,
         required: true,
