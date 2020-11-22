@@ -1,6 +1,6 @@
 const dbConfig = {
-    "dbuser" : "NOT_CORRECT_USERNAME",
-    "dbpass" : "NOT_CORRECT_PASSWORD"
+    "dbuser" : "guru",
+    "dbpass" : "5UnYfyVWWVL4VqWM"
 }
 
 module.exports = dbConfig;
